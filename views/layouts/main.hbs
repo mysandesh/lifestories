@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>StoryBooks</title>
+  </head>
+  <body>
+    {{> _header}}
+    {{> _add_btn}}
+    <div class="container">
+      {{{body}}}
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+
+<!-- CKEditor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.20.1/ckeditor.js" integrity="sha512-zFNDGGU5T3I464vTJn5SupfBJEoxFa7oa5BRkQjm409ORBe1U4f7cpbylDdV21yrmjmYKo3Y0sPTxR9kBgSkvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+<!--
+Initializing JavaScript on sidenav and forms
+ -->
+<script>
+  M.Sidenav.init(document.querySelector('.sidenav'))
+  M.FormSelect.init(document.querySelector('#status'))
+  CKEDITOR.replace('body', {
+    plugins: 'wysiwygarea, toolbar, basicstyles, link'
+  })
+</script>
+
+  </body>
+</html>
