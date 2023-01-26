@@ -1,6 +1,6 @@
 LifeStories Application uses Node.js, Express, MongoDB, Passport with a Google OAuth strategy.
 
-This includes in-depth the following-
+This project makes use of the following in-depth:
 Database Setup
 Installing Dependencies
 Express Setup
